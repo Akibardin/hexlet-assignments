@@ -19,12 +19,13 @@ public class Flat implements Home {
 
     @Override
     public int compareTo(Home another) {
-        return area.compareTo(another.getArea());
+        Double fullArea = area + balconyArea;
+        return fullArea.compareTo(another.getArea());
     }
 
     @Override
     public double getArea() {
-        return area;
+        return area + balconyArea;
     }
 }
 // END

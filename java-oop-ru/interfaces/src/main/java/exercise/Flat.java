@@ -1,13 +1,12 @@
 package exercise;
 
-import exercise.Home;
 // BEGIN
-public class Flat implements Home{
+public class Flat implements Home {
     private Double area;
     private Double balconyArea;
     private int floor;
 
-    public Flat (double area, double balconyArea, int floor) {
+    public Flat(double area, double balconyArea, int floor) {
         this.area = area;
         this.balconyArea = balconyArea;
         this.floor = floor;

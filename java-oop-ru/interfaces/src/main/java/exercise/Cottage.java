@@ -1,8 +1,7 @@
 package exercise;
 
-import exercise.Home;
 // BEGIN
-public class Cottage implements Home{
+public class Cottage implements Home {
     private Double area;
     private int floorCount;
 

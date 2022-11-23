@@ -8,8 +8,12 @@ import java.util.ArrayList;
 // BEGIN
 public class TcpConnection {
     private Connection connection;
+    private final String ipAddress;
+    private final Integer port;
     public TcpConnection(String ipAddress, int port) {
         this.connection = new Disconnected(this);
+        this.ipAddress = ipAddress;
+        this.port = port;
     }
 
     public void connect() {
